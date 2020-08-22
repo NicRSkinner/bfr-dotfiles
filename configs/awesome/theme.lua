@@ -23,16 +23,16 @@ local theme = {}
 
 
 -- Font
-theme.font = "SF Pro Text 9"
+theme.font = "Roboto Mono" -- "SF Pro Text 9"
 theme.title_font = "SF Pro Display Medium 10"
 
 -- Background
 theme.bg_normal = "#1f2430"
-theme.bg_dark = "#000000"
+theme.bg_dark = "#994d00"
 theme.bg_focus = "#151821"
 theme.bg_urgent = "#ed8274"
 theme.bg_minimize = "#444444"
-theme.bg_systray = theme.bg_normal
+theme.bg_systray = theme.bg_dark -- theme.bg_normal
 
 -- Foreground
 theme.fg_normal = "#ffffff"
@@ -41,14 +41,14 @@ theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
 -- Window Gap Distance
-theme.useless_gap = dpi(7)
+theme.useless_gap = dpi(1)
 
 -- Show Gaps if Only One Client is Visible
 theme.gap_single_client = true
 
 -- Window Borders
-theme.border_width = dpi(0)
-theme.border_normal = theme.bg_normal
+theme.border_width = dpi(2)
+theme.border_normal = theme.bg_dark -- theme.bg_normal
 theme.border_focus = "#ff8a65"
 theme.border_marked = theme.fg_urgent
 
@@ -71,7 +71,7 @@ theme.tasklist_fg_normal = theme.fg_normal
 
 -- Panel Sizing
 theme.left_panel_width = dpi(55)
-theme.top_panel_height = dpi(26)
+theme.top_panel_height = dpi(25)
 
 -- Notification Sizing
 theme.notification_max_width = dpi(350)
