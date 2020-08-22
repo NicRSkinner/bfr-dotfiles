@@ -16,7 +16,7 @@ local awful = require("awful")
 
 -- Import theme
 local beautiful = require("beautiful")
-beautiful.init(gears.filesystem.get_configuration_dir() .. "theme.lua")
+beautiful.init(require("theme"))
 
 -- Import Keybinds
 local keys = require("keys")
@@ -36,7 +36,7 @@ require("components.exit-screen")
 require("components.volume-adjust")
 
 -- Autostart specified apps
-local apps = require("apps")
+local apps = require("configuration.apps")
 apps.autostart()
 
 
@@ -56,8 +56,8 @@ awful.layout.layouts = {
 local tags = require("tags")
 
 -- Import panels
-local left_panel = require("components.left-panel")
-local top_panel = require("components.top-panel")
+local left_panel = require("layout.left-panel")
+local top_panel = require("layout.top-panel")
 
 -- Set up each screen (add tags & panels)
 awful.screen.connect_for_each_screen(function(s)
