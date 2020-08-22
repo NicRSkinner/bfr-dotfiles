@@ -51,11 +51,11 @@ local month_calendar = awful.widget.calendar_popup.month({
    font = beautiful.title_font,
    long_weekdays = true,
    margin = 0, -- 10
-   style_month = {border_width = 0, padding = 12, shape = cal_shape, padding = 25},
-   style_header = {border_width = 0, bg_color = "#00000000"},
+   style_month = {border_width = 1, padding = 12, shape = cal_shape, padding = 25},
+   style_header = {border_width = 1, bg_color = "#00000000"},
    style_weekday = {border_width = 0, bg_color = "#00000000"},
-   style_normal = {border_width = 0, bg_color = "#00000000"},
-   style_focus = {border_width = 0, bg_color = "#8AB4F8"},
+   style_normal = {border_width = 1, bg_color = "#00000000"},
+   style_focus = {border_width = 1, bg_color = "#8AB4F8"},
 })
 
 -- Attach calentar to clock_widget
