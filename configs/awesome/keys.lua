@@ -264,36 +264,6 @@ keys.globalkeys = gears.table.join(
    -- CLIENT FOCUSING
    -- =========================================
 
-   -- Focus client by direction (hjkl keys)
-   awful.key({modkey}, "j",
-      function()
-         awful.client.focus.bydirection("down")
-         raise_client()
-      end,
-      {description = "focus down", group = "client"}
-   ),
-   awful.key({modkey}, "k",
-      function()
-         awful.client.focus.bydirection("up")
-         raise_client()
-      end,
-      {description = "focus up", group = "client"}
-   ),
-   awful.key({modkey}, "h",
-      function()
-         awful.client.focus.bydirection("left")
-         raise_client()
-      end,
-      {description = "focus left", group = "client"}
-   ),
-   awful.key({modkey}, "l",
-      function()
-         awful.client.focus.bydirection("right")
-         raise_client()
-      end,
-      {description = "focus right", group = "client"}
-   ),
-
    -- Focus client by direction (arrow keys)
    awful.key({modkey}, "Down",
       function()
