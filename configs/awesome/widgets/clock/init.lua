@@ -4,7 +4,7 @@ local gears = require('gears')
 local beautiful = require('beautiful')
 local dpi = beautiful.xresources.apply_dpi
 local clickable_container = require('widgets.clickable-container')
-local military_mode = false
+local military_mode = true
 
 local create_clock = function(s)
 
