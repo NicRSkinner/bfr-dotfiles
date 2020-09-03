@@ -22,7 +22,7 @@ local naughty = require("naughty")
 
 local wallpaper_dir = gears.filesystem.get_configuration_dir() .. "/background/wallpapers"
 
-math.randomseed(os.date("%Y%m%d%H%M%S"R))
+math.randomseed(os.date("%Y%m%d%H%M%S"))
 local wallpaper_num = math.random(0, 9)
 
 local wallpaper = wallpaper_dir .. "/wallpaper" .. wallpaper_num .. ".jpg"
