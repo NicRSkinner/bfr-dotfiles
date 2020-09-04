@@ -27,12 +27,12 @@ theme.font = "Roboto Mono" -- "SF Pro Text 9"
 theme.title_font = "SF Pro Display Medium 10"
 
 -- Background
-theme.bg_normal = "#1f2430"
-theme.bg_dark = "#994d00"
-theme.bg_focus = "#151821"
+theme.bg_normal = "#4C566A"
+theme.bg_dark = "#2E3440"
+theme.bg_focus = "#434C5E"
 theme.bg_urgent = "#ed8274"
 theme.bg_minimize = "#444444"
-theme.bg_systray = theme.bg_dark -- theme.bg_normal
+theme.bg_systray =  theme.bg_normal
 
 -- Foreground
 theme.fg_normal = "#ffffff"
@@ -48,7 +48,7 @@ theme.gap_single_client = true
 
 -- Window Borders
 theme.border_width = dpi(2)
-theme.border_normal = theme.bg_dark -- theme.bg_normal
+theme.border_normal = theme.bg_normal
 theme.border_focus = "#ff8a65"
 theme.border_marked = theme.fg_urgent
 
