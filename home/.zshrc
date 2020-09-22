@@ -108,5 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source /opt/ros/noetic/setup.zsh
-source ~/catkin_ws/devel/setup.zsh
+# ROS STUFF
+export ROS_DISTRO=foxy
+export ROS_PACKAGE_PATH=/home/nskinner/ros2_ws/
+export ROS_ROOT=/home/nskinner/ros2_foxy/
+
+# Ros2 takes a while to source, so run it in the background.
+( source ~/ros2_foxy/install/setup.zsh & )
