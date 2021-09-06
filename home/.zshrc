@@ -109,9 +109,27 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ROS STUFF
-export ROS_DISTRO=foxy
-export ROS_PACKAGE_PATH=/home/nskinner/ros2_ws/
-export ROS_ROOT=/home/nskinner/ros2_foxy/
+#export ROS_DISTRO=foxy
+#export ROS_PACKAGE_PATH=/home/nskinner/ros2_ws/
+#export ROS_ROOT=/home/nskinner/ros2_foxy/
 
 # Ros2 takes a while to source, so run it in the background.
-( source ~/ros2_foxy/install/setup.zsh & )
+#( source ~/ros2_foxy/install/setup.zsh & )
+
+export ROS_DOMAIN_ID=42
+export ROS_VERSION=2
+export ROS_PYTHON_VERSION=3
+export ROS_DISTRO=foxy
+
+#source /opt/ros2/foxy/setup.zsh
+#source ~/Documents/ardak/install/local_setup.zsh
+
+alias ardakr="source ~/Documents/ardak/install/local_setup.zsh"
+alias dockros="sh ~/Documents/docker-ros2/run_ros2.sh"
+
+alias resbt="sudo modprobe -r btusb && sudo modprobe btusb"
+
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+	startx
+fi
